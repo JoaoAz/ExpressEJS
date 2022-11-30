@@ -39,7 +39,7 @@ servidor.get("/contactos",function (req,res) {
         //variável que serve de indicar qual o template que deve ser carregado para área do conteúdo do template principal (base.ejs)
         conteudo:"conteudos/contactos",
        //variável que serve para indicar qual foi o botão da navegação que despoletou este pedido        
-        menu:"pacontactosgina"
+        menu:"contactos"
     });
 })
 
