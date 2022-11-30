@@ -1,0 +1,37 @@
+<div id="header">
+    <div id="logo">
+      <div id="logo_text">
+        <h1><a href="/">Site<span class="logo_colour">Simples</span></a></h1>
+        <h2>B&aacute;sico. Banal. Normal.</h2>
+      </div>
+    </div>
+    <div id="menubar">
+      <ul id="menu">
+<!--
+REPRESENTAÇÃO VISUAL DO OPERADOR CONDICIONAL TERNÁRIO
+  
+   verdadeira
+   __ __ __ __ 
+  |           |
+  |           |
+  |           v
+condição ?  faz isto  : faz aquilo
+  |                        ^
+  |                        |
+  |__ __ __ __ __ __ __ __ |
+           falsa
+
+  SINTAXE:
+  (condição) ? caso_verdadeiro : caso_falso
+
+  Neste caso contreto, confronta-se o valor da variável "menu" (proveniente de app.js) com as palavras associadas às 
+  ligações das várias páginas e, quando o valor é verdadeiro, atribui-se ao elemento a classe CSS "selected".
+  Caso contrário a classe CSS fica vazia.
+-->
+        <li class="<%- (menu == 'inicio') ? 'selected' : '' %>"><a href="/">In&iacute;cio</a></li>
+        <li class="<%- (menu == 'pagina') ? 'selected' : '' %>"><a href="/pagina">Uma Página</a></li>
+        <li class="<%- (menu == 'outrapagina') ? 'selected' : '' %>"><a href="/outra-pagina">Outra Página</a></li>
+        <li class="<%- (menu == 'contactos') ? 'selected' : '' %>"><a href="/contactos">Contactos</a></li>
+      </ul>
+    </div>
+  </div>

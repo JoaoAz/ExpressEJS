@@ -1,0 +1,42 @@
+<div id="header">
+    <div id="logo">
+      <div id="logo_text">
+        <h1><a href="/">Site<span class="logo_colour">Simples</span></a></h1>
+        <h2>B&aacute;sico. Banal. Normal.</h2>
+      </div>
+    </div>
+    <div id="menubar">
+    <!-- 
+        Aqui apresenta-se uma alternativa com recurso à estrutura mais tradicional IF ELSE
+        Embora também resolva este caso concreto, esta solução obriga a escrever muito código redundante
+    -->
+      <ul id="menu">
+        <% if(menu == 'inicio'){  %>
+        <li class="selected"><a href="/">In&iacute;cio</a></li>
+        <% } else { %>">
+        <li class=""><a href="/">In&iacute;cio</a></li>
+        <% } %>
+
+        <% if(menu == 'pagina'){  %>
+          <li class="selected"><a href="/pagina">Uma Página</a></li>
+          <% } else { %>">
+          <li class=""><a href="/pagina">Uma Página</a></li>
+        <% } %>
+
+        <% if(menu == 'outrapagina'){  %>
+          <li class="selected"><a href="/outra-pagina">Outra Página</a></li>
+          <% } else { %>">
+          <li class=""><a href="/outra-pagina">Outra Página</a></li>
+        <% } %>
+
+        <% if(menu == 'contactos'){  %>
+          <li class="selected"><a href="/contactos">Contactos</a></li>
+          <% } else { %>">
+          <li class=""><a href="/contactos">Contactos/a></li>
+        <% } %>
+        
+       
+
+      </ul>
+    </div>
+  </div>

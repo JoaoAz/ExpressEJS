@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Site Simples | Bem-Vindo!</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keyword, website keyword" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+</head>
+
+<body>
+  <div id="main">
+<!-- CABEÇALHO -->
+<%- include("blocos/header") %>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <!-- SIDEBAR NOTICIAS -->
+        <%- include("blocos/sidebar-noticias") %>
+        <!-- SIDEBAR LINKS -->
+        <%- include("blocos/sidebar-links") %>
+        <!-- SIDEBAR PESQUISA -->
+        <%- include("blocos/sidebar-pesquisa") %>
+      </div>
+      <div id="content">
+        <!-- CONTEUDO -->
+        <%- include(conteudo) %>
+      </div>
+    </div>
+    <!-- RODAPÉ -->
+    <%- include("blocos/footer") %>
+  </div>
+</body>
+</html>
